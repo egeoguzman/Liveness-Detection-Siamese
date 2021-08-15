@@ -1,7 +1,19 @@
 <!-- PROJECT LOGO -->
+
+  <h3 align="center">Face Liveness Detection with Siamese Network</h3>
+  <h3 align="center">NUAA Imposter Database</h3>
+
 <br />
 <p align="center">
-  <h3 align="center">Face Liveness Detection with Siamese Network</h3>
+  
+  <table cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/example_real.jpg"></td>
+    <td><img src="images/example_fake.jpg"></td>
+  </tr>
+</table>
+
+
 
 
 
@@ -22,19 +34,18 @@
       </ul>
     </li>
     <li><a href="#references">3. References</a></li>
-    <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+<h2 name="about-the-project">1. About The Project</h2>
 
 The growing use of control access systems based on face recognition shed light over the need for even more accurate systems to detect face spoofing attacks. Spoofing attacks or copy attacks is a fatal threat for biometric authentication systems. Various techniques have emerged with the use of technology. The most efficient and common techniques are machine learning and deep learning applications. These techniques are used to check whether the person that detected for accessing is real or fake, as well as the correct use. In this project, we propose a face liveness detection method based on the client identity using Siamese network.
 
 <!-- Method -->
-## 2. Method
+<h2 name="method">2. Method</h2>
 
 <ol>
 <li>Collect face image pairs.</li>
@@ -44,7 +55,7 @@ The growing use of control access systems based on face recognition shed light o
 <img src="images/siamese-diagram.jpeg" alt="siamese-diagram" width="400" height="500">
 </ol>
 
-### 2.1 Siamese
+<h3 name="siamese">2.1 Siamese</h3>
 
 The term “siamese twins,” also known as “conjoined twins,” is two identical twins joined in utero. These twins are physically connected to each other, often sharing the same organs, predominately the lower intestinal tract, liver, and urinary tract.
 
@@ -56,7 +67,7 @@ The term “siamese twins,” also known as “conjoined twins,” is two identi
 
 
 
-### 2.2 Image Pairing
+<h3 name="image-pairing">2.2 Image Pairing</h3>
 
 Since there are two subnetworks, we must have two inputs to the siamese model.
 
@@ -90,7 +101,7 @@ There are 28 different person and each person has 50 fake and 50 real photo in t
 <li>Total number of sample for training = Number of positive pairs + Number of negative pairs</li>
 </ul>
 
-### 2.3 Siamese Model Architecture
+<h3 name="model">2.3 Siamese Model Architecture</h3>
 
 The model takes 2 inputs with shape (64 * 64 * 3). The CNN model that is used for this Siamese Network is inspired by AlexNet.
 
@@ -121,7 +132,7 @@ The model takes 2 inputs with shape (64 * 64 * 3). The CNN model that is used fo
 
 <img src="images/model_plot.png">
 
-### 2.4 Contrastive Loss Function
+<h3 name="contrastive-loss"> 2.4 Contrastive Loss Function</h3>
 
 <ul>
 <li>It operates on pairs of embeddings received from the model and on the ground-truth similarity flag — a Boolean label, specifying whether these two samples are “similar” or “dissimilar”. So the input must be not one, but 2 images.</li>
@@ -132,7 +143,7 @@ The model takes 2 inputs with shape (64 * 64 * 3). The CNN model that is used fo
 
 
 <!-- CONTRIBUTING -->
-## References
+<h2 name="references"> References</h2>
 
 1. [https://arxiv.org/pdf/1903.05369.pdf]
 2. [https://www.pyimagesearch.com/2020/11/30/siamese-networks-with-keras-tensorflow-and-deep-learning/]
