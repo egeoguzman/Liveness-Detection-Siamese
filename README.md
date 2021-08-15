@@ -108,8 +108,8 @@ The model takes 2 inputs with shape (64 * 64 * 3). The CNN model that is used fo
 <img src="images/model.png">
 
 <ol>
-<li>Input 96 (64 * 64 * 3)</li>
-<li>Conv2D (9*9) ReLU</li>
+<li>Input (64 * 64 * 3)</li>
+<li>Conv2D 96 (9*9) ReLU</li>
 <li>Batch Normalization</li>
 <li>Pooling (3*3) (2*2)</li>
 <br />
