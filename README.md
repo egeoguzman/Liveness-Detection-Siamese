@@ -146,7 +146,4 @@ The model takes 2 inputs with shape (64 * 64 * 3). The CNN model that is used fo
 <h2 name="references"> References</h2>
 
 1. [https://arxiv.org/pdf/1903.05369.pdf]
-2. [https://www.pyimagesearch.com/2020/11/30/siamese-networks-with-keras-tensorflow-and-deep-learning/]
-3. [https://www.pyimagesearch.com/2020/11/23/building-image-pairs-for-siamese-networks-with-python/]
-4. [https://www.pyimagesearch.com/2021/01/18/contrastive-loss-for-siamese-networks-with-keras-and-tensorflow/]
 
